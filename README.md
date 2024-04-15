@@ -8,9 +8,9 @@ pkg install git -y
 
 pkg install python -y
 
-git clone https://github.com/Rifat5200/BTH-Rifat/
+git clone https://github.com/Rifat5200/BTH-RifatHacker/
 
-cd BTH-Rifat
+cd BTH-RifatHacker
 
 python custom_sms.py
 
